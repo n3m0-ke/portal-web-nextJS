@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { SideNav } from "./ui/sidenav";
+import { SideNav } from '@/app/ui/sidenav'
 import { MagnifyingGlassIcon } from "@heroicons/react/16/solid";
 
 export default function Home({ children }: { children: React.ReactNode }) {
