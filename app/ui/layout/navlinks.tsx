@@ -20,6 +20,7 @@ const links = [
 
 export function NavLinks() {
     const pathname = usePathname();
+    console.log(pathname)
     return (
         <>
         <div className="space-y-3 items-center">
@@ -31,7 +32,15 @@ export function NavLinks() {
                         href={link.href}
                         className="flex group"
                     >
-                        <div className="flex gap-4 mx-0 desktop:px-4 px-3 py-3 rounded-lg hover-transition w-full text-sm text-stone-200 hover:bg-white/20 active:bg-white/30 ">
+                        <div 
+                        className={clsx(
+                            'flex gap-4 mx-0 desktop:px-4 px-3 py-3 rounded-lg hover-transition w-full text-sm text-stone-200',
+                            {
+                                'hover:bg-white/20 active:bg-white/30': !(link.href === pathname), // Apply these classes if link is not active
+                                'bg-white/20 font-bold':pathname === link.href // Apply these classes if link is active
+                            }
+                        )}
+                        >
                             <LinkIcon className="w-6 h-6" />  
                             <span className="text-[.9rem] hidden desktop:block">{link.name}</span>
                         </div>
