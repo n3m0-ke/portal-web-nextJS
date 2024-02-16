@@ -31,3 +31,11 @@ body {
     text-wrap: balance;
   }
 } */
+
+.portal__bg-dark {
+  background-color: #000000;
+}
+
+.portal__bg-light-dark {
+  background-color: #1e1e1e;
+}
