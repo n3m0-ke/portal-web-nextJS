@@ -1,15 +1,17 @@
+
+
 import Dropdown from "@/app/ui/dropdown"
-import FeedFilterDropdown from "@/app/ui/dropdownhui"
+import TopSection from "@/app/ui/feed/topsection"
 
 export default function Feed() {
+
     return (
         <div className="grid grid-cols-[auto,1fr] desktop:ml-72 tablet:ml-20 min-h-screen">
             <div className="max-w-[37.5rem] border-x-[.5px]">
-                <section className="flex justify-between items-center sticky top-0 px-4 py-6 bg-gradient-to-b from-black to-transparent text-white backdrop-blur-lg">
-                    <h1 className="text-[1rem]">Feed</h1>
-                    <FeedFilterDropdown />
 
-                </section>
+                {/* Top Bar Section */}
+                <TopSection />
+                
                 <section className="px-4 py-4 grid grid-cols-[auto,1fr] gap-4 ">
                     <div className="w-12 h-12 overflow-hidden rounded-full">
                         <img src="https://images.unsplash.com/photo-1614639437280-558b05b13939?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDM0fHRvd0paRnNrcEdnfHxlbnwwfHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60"

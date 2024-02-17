@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { PortalLogo } from "./portallogo";
-import { NavLinks } from "./layout/navlinks";
+import { NavLinks } from "./layout/navlinksresponsive";
 import { PowerIcon } from "@heroicons/react/16/solid";
 import Image from "next/image";
 import logoText from "@/public/logo/logotext_new.jpeg";
@@ -8,7 +8,7 @@ import logo from "@/public/logo/logo_new.jpeg";
 
 export function SideNav() {
     return (
-        <nav className="flex-col gap-5 px-2 py-4 min-h-screen justify-between items-center hidden tablet:flex">
+        <nav className="flex-col gap-5 px-2 py-4 min-h-screen justify-between items-center flex">
             <div className="flex flex-col gap-5 items-center desktop:items-stretch w-full">
 
                 {/* LOGO */}

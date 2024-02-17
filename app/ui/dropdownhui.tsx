@@ -29,7 +29,122 @@ export default function FeedFilterDropdown() {
       >
         <Menu.Items className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-black shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
           <div className="py-1">
-            <Menu.Item>
+            <h1 className='text-white ml-3 capitalize'>PREFERENCES</h1>
+            <hr />
+            <h1 className='text-white ml-3 capitalize'>SHOW FROM</h1>
+            <hr />
+
+            <div className="flex items-center mb-2 ml-2 mt-2">
+                <input
+                    id="default-checkbox"
+                    type="checkbox"
+                    value=""
+                    className="w-4 h-4 accent-black bg-black border-gray-300"
+                />
+                <label
+                    htmlFor="default-checkbox"
+                    className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300 "
+                >
+                    Others
+                </label>
+            </div>
+            <div className="flex items-center ml-2 mb-2">
+                <input
+                    id="checked-checkbox"
+                    type="checkbox"
+                    value=""
+                    className="w-4 h-4 accent-black bg-black border-gray-300"
+                />
+                <label
+                    htmlFor="checked-checkbox"
+                    className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                >
+                    Your Orbit
+                </label>
+            </div>
+
+            <hr />
+            <h1 className='text-white ml-3 capitalize'>FEED CONTENT</h1>
+            <hr />
+
+            <div className="flex items-center mb-2 ml-2 mt-2">
+                <input
+                    id="default-checkbox"
+                    type="checkbox"
+                    value=""
+                    className="w-4 h-4 accent-black bg-black border-gray-300"
+                />
+                <label
+                    htmlFor="default-checkbox"
+                    className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300 "
+                >
+                    Rants
+                </label>
+            </div>
+            <div className="flex items-center ml-2 mb-2">
+                <input
+                    id="checked-checkbox"
+                    type="checkbox"
+                    value=""
+                    className="w-4 h-4 accent-black bg-black border-gray-300"
+                />
+                <label
+                    htmlFor="checked-checkbox"
+                    className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                >
+                    Daily Journal
+                </label>
+            </div>
+
+            <hr />
+            <h1 className='text-white ml-3 capitalize'>SORT BY</h1>
+            <hr />
+
+            <div className="flex items-center mb-2 ml-2 mt-2">
+                <input
+                    id="default-checkbox"
+                    type="checkbox"
+                    value=""
+                    className="w-4 h-4 accent-black bg-black border-gray-300"
+                />
+                <label
+                    htmlFor="default-checkbox"
+                    className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300 "
+                >
+                    Recommended
+                </label>
+            </div>
+            <div className="flex items-center ml-2 mb-2">
+                <input
+                    id="checked-checkbox"
+                    type="checkbox"
+                    value=""
+                    className="w-4 h-4 accent-black bg-black border-gray-300"
+                />
+                <label
+                    htmlFor="checked-checkbox"
+                    className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                >
+                    Latest Feed
+                </label>
+            </div>
+
+            <div className="flex items-center ml-2 mb-2">
+                <input
+                    id="checked-checkbox"
+                    type="checkbox"
+                    value=""
+                    className="w-4 h-4 accent-black bg-black border-gray-300"
+                />
+                <label
+                    htmlFor="checked-checkbox"
+                    className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                >
+                    Popularity
+                </label>
+            </div>
+
+            {/* <Menu.Item>
               {({ active }) => (
                 <a
                   href="#"
@@ -82,7 +197,7 @@ export default function FeedFilterDropdown() {
                   </button>
                 )}
               </Menu.Item>
-            </form>
+            </form> */}
           </div>
         </Menu.Items>
       </Transition>
