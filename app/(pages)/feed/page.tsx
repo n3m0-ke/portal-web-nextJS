@@ -2,6 +2,7 @@
 
 import Dropdown from "@/app/ui/dropdown"
 import TopSection from "@/app/ui/feed/topsection"
+import { MdDiamond, MdOutlineRepeat, MdOutlineMessage, MdOutlineIosShare } from "react-icons/md";
 
 export default function Feed() {
 
@@ -139,6 +140,51 @@ export default function Feed() {
                     </div>
                 </section>
                 <section>
+                    <div className="px-4 py-3 border-b border-grey-200">
+                        <div className="grid grid-cols-[auto,1fr] gap-3">
+                            <div className="w-12 h-12 overflow-hidden rounded-full">
+                                <img 
+                                className="w-full" 
+                                src="https://images.unsplash.com/photo-1602489053809-4d912f6c8b4d?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE3fHRvd0paRnNrcEdnfHxlbnwwfHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" 
+                                alt="avatar" 
+                                />
+                            </div>
+                            
+
+                            <div className="flex flex-col min-w-0">
+                                <p className="text-sm">
+                                    <span className="truncate">
+                                        <span className="text-white font-semibold ">User Name</span>{" "}
+                                        <span className="text-zinc-500">@username</span>
+                                    </span>
+                                    
+                                    <span className="flex-shring-0">
+                                        <span className="text-zinc-500 px-1">·</span>
+                                        <span className="text-zinc-500">18m</span>
+                                    </span>
+                                    
+                                </p>
+
+                                <p className="text-zinc-200 font-thin">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat.
+                                </p>
+
+                                <div className="flex justify-between mt-2 text-zinc-300">
+                                    <MdDiamond className="w-5 h-5 p-px fill-current" />
+                                    <MdOutlineRepeat className="w-5 h-5 p-px fill-current" />
+                                    <MdOutlineMessage className="w-5 h-5 p-px fill-current" />
+                                    <MdOutlineIosShare className="w-5 h-5 p-px fill-current" />
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
                     <div
                         className="border-t-[1px] px-4 pt-3 pb-2 hover:bg-neutral-100 transition-colors duration-500 ease-out">
                         <div className="grid grid-cols-[auto,1fr] gap-3">
