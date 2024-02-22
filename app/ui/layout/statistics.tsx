@@ -222,24 +222,31 @@ export default function Statistics() {
             </Transition>
         </div>
         
-        <div className='w-full border border-white mt-5'>
+        <div className='w-full border border-white my-5 py-5 px-2'>
             
-            <h1 className="text-[1rem] text-white px-4 pt-4">General Balance</h1>
+            <h1 className="text-[1rem] text-white px-4 pt-4 mx-auto mb-4">General Balance</h1>
             <div className='border border-white p-3 rounded-full'>
                 <RadarChart />
             </div>
             
             <h1 className="text-[1rem] text-white px-4 pt-4">Body</h1>
-            <ProgressTracker progress={70}/>
+            
+            <div className='mx-4'>                
+                <ProgressTracker progress={70}/>
+            </div>
 
             <h1 className="text-[1rem] text-white px-4 pt-4">Mind</h1>
-            <ProgressTracker progress={30}/>
+            
+            <div className='mx-4'>
+                <ProgressTracker progress={30}/>
+            </div>
 
+            
             <h1 className="text-[1rem] text-white px-4 pt-4">Soul</h1>
-            <ProgressTracker progress={50}/>
-
-
-
+            
+            <div className='mx-4'>
+                <ProgressTracker progress={50}/>
+            </div>
         </div>
 </>
     )
