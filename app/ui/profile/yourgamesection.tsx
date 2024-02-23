@@ -16,6 +16,7 @@ import {
     TabsBody,
     TabPanel,
 } from "@material-tailwind/react";
+import Statistics from "../layout/statistics";
 
 export default function YourGameSection() {
     return (
@@ -57,13 +58,13 @@ export default function YourGameSection() {
 
             <TabsBody
                 placeholder={undefined}
-                className="w-full bg-inherit"
+                className="w-full bg-inherit bg-black"
             >
                 <TabPanel
                     value="game-stats"
-                    className="w-full text-white p-0"
+                    className="w-full text-white p-0 bg-black p-3"
                 >
-                    <h1>Game Stats Tab</h1>
+                    <Statistics />
 
                 </TabPanel>
                 <TabPanel
