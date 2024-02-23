@@ -17,6 +17,7 @@ import {
     TabPanel,
 } from "@material-tailwind/react";
 import Statistics from "../layout/statistics";
+import LifeLog from "./lifelog";
 
 export default function YourGameSection() {
     return (
@@ -71,7 +72,7 @@ export default function YourGameSection() {
                     value="life-log"
                     className="w-full text-white p-0"
                 >
-                    <h1>Life Log Tab</h1>
+                    <LifeLog />
 
                 </TabPanel>
 

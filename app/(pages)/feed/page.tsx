@@ -169,8 +169,7 @@ export default function Feed() {
                                     <span className="flex-shrink-0">
                                         <span className="text-zinc-500 px-1">·</span>
                                         <span className="text-zinc-500">18m</span>
-                                    </span>
-                                    
+                                    </span>                                    
                                 </p>
 
                                 <p className="text-zinc-200 font-thin">
